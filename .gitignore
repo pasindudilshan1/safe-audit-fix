@@ -1,0 +1,3 @@
+node_modules/
+.safe-audit-fix/
+test-fixture/node_modules/
