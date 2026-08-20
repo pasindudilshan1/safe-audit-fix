@@ -34,6 +34,15 @@
     "model-context-protocol"
   ],
   "license": "MIT",
+  "author": "Pasindu Dilshan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasindudilshan1/safe-audit-fix.git"
+  },
+  "homepage": "https://github.com/pasindudilshan1/safe-audit-fix#readme",
+  "bugs": {
+    "url": "https://github.com/pasindudilshan1/safe-audit-fix/issues"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
     "zod": "^3.24.0"

@@ -30,7 +30,8 @@ It works two ways from one shared engine:
 ## Install
 
 ```bash
-git clone <this-repo> && cd safe-audit-fix
+git clone https://github.com/pasindudilshan1/safe-audit-fix.git
+cd safe-audit-fix
 npm install
 npm link        # makes the `safe-audit-fix` command available globally
 ```
