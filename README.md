@@ -29,6 +29,22 @@ It works two ways from one shared engine:
 
 ## Install
 
+**Try it instantly — no install** (run inside your project folder):
+
+```bash
+npx safe-audit-fix scan
+npx safe-audit-fix fix
+```
+
+**Or install globally:**
+
+```bash
+npm install -g safe-audit-fix
+safe-audit-fix scan
+```
+
+**Or from source:**
+
 ```bash
 git clone https://github.com/pasindudilshan1/safe-audit-fix.git
 cd safe-audit-fix
@@ -60,7 +76,7 @@ Register the server, then just ask your AI assistant: *"safely fix the vulnerabi
 **Claude Code:**
 
 ```bash
-claude mcp add safe-audit-fix -- node <absolute-path>/src/mcp-server.js
+claude mcp add safe-audit-fix -- npx -y --package=safe-audit-fix safe-audit-fix-mcp
 ```
 
 **Or via `.mcp.json` / MCP config file:**
@@ -69,12 +85,14 @@ claude mcp add safe-audit-fix -- node <absolute-path>/src/mcp-server.js
 {
   "mcpServers": {
     "safe-audit-fix": {
-      "command": "node",
-      "args": ["<absolute-path>/src/mcp-server.js"]
+      "command": "npx",
+      "args": ["-y", "--package=safe-audit-fix", "safe-audit-fix-mcp"]
     }
   }
 }
 ```
+
+(If you installed globally, you can use `safe-audit-fix-mcp` directly as the command instead of npx.)
 
 Exposed tools:
 
